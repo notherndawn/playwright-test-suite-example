@@ -12,8 +12,8 @@ public class LoginPageTest extends BaseTest {
     void successLoginTest() {
         LoginPage loginPage = new LoginPage(page);
         loginPage.navigate();
-        loginPage.login("standard_user", "secret_sauce");
+        loginPage.login(configuration.username(), configuration.password());
 
-        assertThat(page).hasURL("https://www.saucedemo.com/inventory.html");
+        assertThat(page).hasURL("inventory.html");
     }
 }

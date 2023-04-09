@@ -17,7 +17,7 @@ public class LoginPage {
     }
 
     public void navigate() {
-        page.navigate("https://www.saucedemo.com/");
+        page.navigate("");
     }
 
     public void login(String username, String password) {
